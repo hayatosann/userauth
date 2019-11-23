@@ -15,6 +15,18 @@
                     @endif
 
                     You are logged in!
+                    <table class="table table-striped table-bordered">
+                        <tr>
+                            <th>ID</th>
+                            <th>NAME</th>
+                        </tr>
+                        @foreach($users as $user)
+                        <tr>
+                            <td>{{ $user->id }}</td>
+                            <td>{{ $user->name }}</td>
+                        </tr>
+                        @endforeach
+                        </table>
                 </div>
             </div>
         </div>
